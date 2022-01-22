@@ -19,7 +19,7 @@ function preload() {
   myFont = loadFont("data1/Goodbyecrewelworldnf-mLVeP.otf");
   txt1 = loadStrings("data1/Mitch.txt");
   txt2 = loadStrings("data1/condolences.txt");
-  for (var i = 0; i < 25; i++) {
+  for (var i = 0; i < 88; i++) {
     bg[i] = loadImage("img/img" + i + ".png");
   }
 }

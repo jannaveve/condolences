@@ -85,11 +85,11 @@ function drawText() {
     // Set the fill color to the average color of the pixels
   fill(avgRed, avgGreen, avgBlue,150);
   rectMode(CENTER);
-  rect(width-95, height / 2, 160, 340);
+  rect(width-95, height / 2, 100, 750);
   //image(cg,0,0);
   fill(60,20,20);
   textSize(16);
-  text(lines.join(" "), width-90, height/2, 150, 340);
+  text(lines.join(" "), width-90, height/2, 90, 750);
   console.log(r);
 
 }
@@ -97,8 +97,8 @@ function drawText() {
 function mouseClicked() {
   lines = markov.generate(2);
   textSize(16);
-  x = 350;
-  y = 300;
+  x = 750;
+  y =700;
   drawText();
   //saveCanvas( 'myCanvas', 'png')
 

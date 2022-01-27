@@ -19,7 +19,7 @@ function preload() {
   myFont = loadFont("data1/Goodbyecrewelworldnf-mLVeP.otf");
   txt1 = loadStrings("data1/Mitch.txt");
   txt2 = loadStrings("data1/condolences.txt");
-  for (var i = 0; i < 88; i++) {
+  for (var i = 0; i < 25; i++) {
     bg[i] = loadImage("img/img" + i + ".png");
   }
 }
@@ -85,20 +85,21 @@ function drawText() {
     // Set the fill color to the average color of the pixels
   fill(avgRed, avgGreen, avgBlue,150);
   rectMode(CENTER);
-  rect(width-200, height / 2, 100, 750);
+  rect(width-200, height / 2, 300, 750);
   //image(cg,0,0);
   fill(60,20,20);
-  textSize(16);
-  text(lines.join(" "), width-90, height/2, 90, 750);
-  console.log(r);
+  textSize(18);
+  rectMode(CORNER);
+  text(lines.join(" "), width-330, height/10,250, 850 );
+  //console.log(r);
 
 }
 
 function mouseClicked() {
   lines = markov.generate(2);
-  textSize(16);
-  x = 750;
-  y =700;
+  //textSize(24);
+  //x = width;
+  //y =width-300;
   drawText();
   //saveCanvas( 'myCanvas', 'png')
 

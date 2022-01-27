@@ -25,8 +25,8 @@ function preload() {
 }
 
 function setup() {
-  let c = createCanvas(576, 384);
-  cg = createGraphics(576, 384);
+  let c = createCanvas(1152, 768);
+  cg = createGraphics(1152, 768);
 
   textFont(myFont, 24);
   textLeading(36);
@@ -50,7 +50,7 @@ function drawText() {
   
   noStroke();
   tint(255, 255);
-  image(bg[r], 0, 0, 384, 384);
+  image(bg[r], 0, 0, 768, 768);
     // Load the pixels
   bg[r].loadPixels();
 
@@ -101,4 +101,5 @@ function mouseClicked() {
   y = 300;
   drawText();
   //saveCanvas( 'myCanvas', 'png')
+  print();  
 }

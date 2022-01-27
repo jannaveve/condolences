@@ -101,5 +101,8 @@ function mouseClicked() {
   y = 300;
   drawText();
   //saveCanvas( 'myCanvas', 'png')
+
+}
+function keyPressed() {
   print();  
 }

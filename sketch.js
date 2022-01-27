@@ -85,7 +85,7 @@ function drawText() {
     // Set the fill color to the average color of the pixels
   fill(avgRed, avgGreen, avgBlue,150);
   rectMode(CENTER);
-  rect(width-95, height / 2, 100, 750);
+  rect(width-200, height / 2, 100, 750);
   //image(cg,0,0);
   fill(60,20,20);
   textSize(16);
